@@ -6,9 +6,95 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!asdfghjklé
-    </h1>
+<body class="bg-white text-black dark:text-white dark:bg-zinc-900">
+  <header class="sticky top-0 z-10">
+    <nav class="bg-green-800">
+      <div class="mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex flex-shrink-0 items-center">
+              <img class="h-8 w-auto" src="https://foltifeki.duckdns.org/local/webassets/icon.png" alt="Your Company">
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <a href="#" class="rounded-md bg-green-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Főoldal</a>
+                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Jelentkezés</a>
+                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Igénylés</a>
+                <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Rólunk</a>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <button type="button">
+              <span class="sr-only">Multi-Admin</span>
+              <a href="#" class="block rounded-md bg-emerald-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Multi-Admin</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Főoldal</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Jelentkezés</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Igénylés</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Rólunk</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <main class="">
+    <div class="p-4 max-w-6xl mx-auto">
+      <h1 class="text-center font-bold text-4xl mb-6">Ext-Garden</h1>
+      <hr class="mx-auto bg-black bg-black dark:bg-white w-1/2">
+      <div class="flex justify-center mt-10">
+        <div class=" mr-10">
+          <p class="text-2xl font-medium">Az Ext-Garden egy megbízható platform, amely összekapcsolja a házkörüli és kertészeti munkákra szakosodott vállalkozókat az ilyen szolgáltatásokat igénylő ügyfelekkel. Cégünk regisztrálja, nyilvántartja és közvetíti a megbízásokat, valamint gondoskodik az elszámolásról, mindezt átlátható jutalékrendszerrel. Bízza ránk a munka megtalálását vagy elvégzését, mi egyszerűvé és hatékonnyá tesszük!</p>
+        </div>
+        <div class="ml-10">
+          <img class="rounded-xl max-w-lg" src="https://cdn.discordapp.com/attachments/1294220123951071233/1296742844354003014/istockphoto-165831199-612x612.jpg?ex=67136562&is=671213e2&hm=02501bf39738c24892298e9a982fed8cb997cb78659ab892ea79b3e782a0afeb&" alt="Kép">
+        </div>
+      </div>
+      <hr class="mt-10 mx-auto bg-black bg-black dark:bg-white w-1/2">
+      <div class=" mt-10 mx-auto">
+        <div class="flex ">
+          <div class="">
+            <iframe class="rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.0711536989975!2d19.067139193185213!3d47.49884280124691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc664e7cf301%3A0x77373eecf46c20f5!2sBudapest%2C%20Kertész%20u.%2010%2C%201073!5e1!3m2!1shu!2shu!4v1729239677519!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="mx-auto my-auto">
+            <div class="">
+              <h1 class="text-2xl font-bold">Elérhetőség:</h1>
+              <div class="p-4 text-xl">
+                <p>Cím: 1234 Budapest, Kertész utca 10.</p>
+                <p>Telefonszám: +36 30 123 4567</p>
+                <p>E-mail: info@extgarden.hu</p>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="text-center p-4 max-w-3xl mx-auto mt-6 mb-6 rounded-2xl bg-slate-100/60 dark:bg-slate-800/60 shadow-xl">
+    <div>
+        <p>Ext-Garden ©2024 Minden jog fentartva.</p>
+    </div>
+  </footer>
   </body>
 </html>
